@@ -45,3 +45,14 @@ pixlet render hello_world.star
 export DEVICE_ID=$(pixlet devices | cut -d ' ' -f1)
 pixlet push $DEVICE_ID hello_world.webp
 ```
+
+## Building for [Inklink](https://getinklink.net)
+
+Inklink is another project I've worked on to show information of interest at a glance. See https://github.com/johnpc/ink-link
+
+You can view your Inklink widget on Tidbyt using:
+
+```bash
+export INKLINK_DEVICE_CODE={YOUR_DEVICE_CODE_HERE}
+sh ./inklink.sh
+```
